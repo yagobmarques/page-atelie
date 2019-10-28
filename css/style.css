@@ -17,14 +17,25 @@
   	background-size: cover; /* Resize the background image to cover the entire container */
 }
 #meuNavbar{
-    background-color: #D9828B;
+    background-color: #f4a0c5;
     margin: 0px;
+    border-radius: 5px;
 }
 #meuNavbar a{
     color: black;
 }
+#meuNavbar a:hover{
+    color: white;   
+}
 .bg-rosa{
-     background-color: #D9828B;
-     padding:10px;
+     background-color: #f4a0c5;
+     padding:0px;
+     padding-bottom: 10px;;
      margin:0px;
+}
+.border-radius{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
 }
