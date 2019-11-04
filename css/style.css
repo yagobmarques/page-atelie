@@ -22,10 +22,10 @@
     border-radius: 5px;
 }
 #meuNavbar a{
-    color: black;
+    color: #603d37;
 }
 #meuNavbar a:hover{
-    color: white;   
+    color: #0ABAB5;   
 }
 .bg-rosa{
      background-color: #f4a0c5;
