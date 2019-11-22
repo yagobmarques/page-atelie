@@ -6,8 +6,13 @@
     <link rel="shortcut icon" href="img/marca.jpg" type="image/x-icon">
     <title>Ateliê Doce Arte</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
+    <!-- JQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Vue -->
+    <script type="text/javascript" src="js/vue.js"></script>
+
+    <!-- Estilos -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -46,9 +51,16 @@
                 <p style="color:rgb(96, 61, 55);">Especialistas em pasta de ninho</p>
         </div>
     </div>
-    <div class="border-radius">
+    <div class="border-radius" id="corpo">
     <div class="container-fluid bg-3 text-center bg-rosa">
         <h3 style="color:rgb(96, 61, 55);">Um pouco do meu trabalho</h3><br>
+        <p>{{user_id}}</p>
+        <div class="row">
+            <div class="col-sm-3" v-for="imagem in imagens">
+                <p>{{imagem.caption}}</p>
+                <img :src="imagem.url" class="img-responsive teste" style="width:100%" alt="Image">
+            </div>
+        </div>
         <div class="row">
             <div class="col-sm-3">
                 <p>Lorem ipsum</p>
@@ -95,6 +107,7 @@
             <p>Em construção</p>
         </footer>
     </div>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
