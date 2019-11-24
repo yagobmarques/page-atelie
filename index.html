@@ -16,8 +16,9 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/e458e8faee.js" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e458e8faee.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -35,76 +36,87 @@
                 <ul class="nav navbar-nav">
                     <li><a href="./sobre.html">Sobre</a></li>
                     <li><a href="./fotos.html">Mais Fotos</a></li>
-                    <li><a href="#">Contatos</a></li>
+                    <li><a href="./contatos.html">Contatos</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://www.instagram.com/ateliedocearte_/"><img src="img/instagram.png" width="15px"> Instagram</a></li>
-                    <li><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5584996489990"><img src="img/whatsapp-logo-variant.png" width="15px"> Whatsapp</a></li>
-                    <li><a href="https://www.facebook.com/ateliedoceartern/"><img src="img/facebook-square.png" width="15px"> Facebook</a></li>
+                    <li><a href="https://www.instagram.com/ateliedocearte_/"><img src="img/instagram.png" width="15px">
+                            Instagram</a></li>
+                    <li><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5584996489990"><img
+                                src="img/whatsapp-logo-variant.png" width="15px"> Whatsapp</a></li>
+                    <li><a href="https://www.facebook.com/ateliedoceartern/"><img src="img/facebook-square.png"
+                                width="15px"> Facebook</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="jumbotron" id="titulo">
         <div class="container text-center">
-                <img src="./img/marca sem fundo e bordado.png" class="img-fluid center">
-                <p style="color:rgb(96, 61, 55);">Especialistas em pasta de ninho</p>
+            <img src="./img/marca sem fundo e bordado.png" class="img-fluid center">
+            <p style="color:rgb(96, 61, 55);">Especialistas em pasta de ninho</p>
         </div>
     </div>
     <div class="border-radius" id="corpo">
-    <div class="container-fluid bg-3 text-center bg-rosa">
-        <h3 style="color:rgb(96, 61, 55);">Um pouco do meu trabalho</h3><br>
-        <p>{{user_id}}</p>
-        <div class="row">
-            <div class="col-sm-3" v-for="imagem in imagens">
-                <p>{{imagem.caption}}</p>
-                <img :src="imagem.url" class="img-responsive teste" style="width:100%" alt="Image">
+        <div class="container-fluid bg-3 text-center bg-rosa">
+            <h3 style="color:rgb(96, 61, 55);">Um pouco do meu trabalho</h3><br>
+            <p>{{user_id}}</p>
+            <div class="row">
+                <div class="col-sm-3" v-for="imagem in imagens">
+                    <p>{{imagem.caption}}</p>
+                    <img :src="imagem.url" class="img-responsive teste" style="width:100%" alt="Image">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>Lorem ipsum</p>
+                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%"
+                        alt="Image">
+                </div>
+                <div class="col-sm-3">
+                    <p>Lorem ipsum</p>
+                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%"
+                        alt="Image">
+                </div>
+                <div class="col-sm-3">
+                    <p>Lorem ipsum</p>
+                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%"
+                        alt="Image">
+                </div>
+                <div class="col-sm-3">
+                    <p>Lorem ipsum</p>
+                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%"
+                        alt="Image">
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <p>Lorem ipsum</p>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            </div>
-            <div class="col-sm-3">
-                <p>Lorem ipsum</p>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            </div>
-            <div class="col-sm-3">
-                <p>Lorem ipsum</p>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            </div>
-            <div class="col-sm-3">
-                <p>Lorem ipsum</p>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            </div>
-        </div>
-    </div>
-    
+
         <div class="container-fluid bg-3 text-center">
             <div class="row bg-rosa">
                 <div class="col-md-3">
                     <p>Lorem ipsum</p>
-                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%"
+                        alt="Image">
                 </div>
                 <div class="col-md-3">
                     <p>Lorem ipsum</p>
-                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%"
+                        alt="Image">
                 </div>
                 <div class="col-md-3">
                     <p>Lorem ipsum</p>
-                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%"
+                        alt="Image">
                 </div>
                 <div class="col-md-3">
                     <p>Lorem ipsum</p>
-                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%"
+                        alt="Image">
                 </div>
             </div>
         </div>
     </div>
-    <div class="border-radius">
+    <div class="border-radius" id="rodape">
         <footer class="container-fluid text-center bg-rosa">
-            <p>Em construção</p>
+            <p>Ateliê Doce Arte © 2019. Todos os direitos reservados. | Feito por <a href="https://github.com/yagobmarques">Yago Marques</a> e <a href="https://github.com/Fisiquelaz">Danilo Galvão</a>.</p>
         </footer>
     </div>
     <script src="./js/main.js"></script>
