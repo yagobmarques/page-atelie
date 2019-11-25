@@ -45,3 +45,12 @@
     border-style: solid;
     border-radius: 5px;
 }
+#rodape{
+    padding: 15px;
+}
+.image_hover:hover{
+    opacity: 0.8;
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+}
