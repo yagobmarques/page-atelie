@@ -6,14 +6,19 @@
     <link rel="shortcut icon" href="img/marca.jpg" type="image/x-icon">
     <title>Ateliê Doce Arte</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
+    <!-- JQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Vue -->
+    <script type="text/javascript" src="js/vue.js"></script>
+
+    <!-- Estilos -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e458e8faee.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -25,283 +30,60 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#meuNavbar">Ateliê Doce Arte</a>
+                <a class="navbar-brand" href="index.html">Ateliê Doce Arte</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="./fotos.html">Mais Fotos</a></li>
+                    <li><a href="./contatos.html">Contatos</a></li>
+                </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#categorias">Categorias</a></li>
-                    <li><a href="#ultimos_trabalhos">Últimos trabalhos</a></li>
+                    <li><a href="https://www.instagram.com/ateliedocearte_/"><img src="img/instagram.png" width="15px">
+                            Instagram</a></li>
+                    <li><a href="https://api.whatsapp.com/send?1=pt_BR&phone=5584996489990"><img
+                                src="img/whatsapp-logo-variant.png" width="15px"> Whatsapp</a></li>
+                    <li><a href="https://www.facebook.com/ateliedoceartern/"><img src="img/facebook-square.png"
+                                width="15px"> Facebook</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="jumbotron" id="titulo">
         <div class="container text-center">
-
             <img src="./img/marca sem fundo e bordado.png" class="img-fluid center">
-
-            <div id="icones">
-                <a href="https://www.instagram.com/ateliedocearte_/"><img src="img/instagram.png" width="30px">
-                </a>
-                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5584996489990"><img
-                        src="img/whatsapp-logo-variant.png" width="30px"></a>
-                <a href="https://www.facebook.com/ateliedoceartern/"><img src="img/facebook-square.png"
-                        width="30px"></a>
-            </div>
+            <p style="color:rgb(96, 61, 55);">Especialistas em pasta de ninho</p>
         </div>
     </div>
-    <div class="row bg-blue-2" id="sobre">
-        <div class="col-md-12">
-            <img id="foto_mayanne" src="img/foto_mayanne.jpg" alt="Foto da Mayanne">
-            <span>
-                "Cresci com massinhas de modelar ao meu redor! Para onde ia, elas me acompanhavam! Já adolescente, em
-                2017, mudei só o material: em vez da massas de modelar, comecei a usar chocolate, afinal o mundo
-                precisa
-                de mais doçura! Com isso, apliquei o que aprendi com meus pais e irmãos: compromisso,
-                responsabilidade e
-                à manter a palavra. Nesse tripé firmei minha vida e o ateliê."
-            </span>
-            <p id="assinatura" style="font-family: 'Cedarville Cursive', cursive; font-size: 20px;">
-                Mayanne Ellen</p>
-
-        </div>
-
-    </div>
-
-    <div class="container-fluid bg-3 text-center bg-blue " id="categorias" style="padding-bottom: 50px;">
-        <h1 style="color:rgb(96, 61, 55);">Categorias</h1><br>
-        <div class="row ">
-            <div class="col-sm-4 center botao_carousel">
-                <img class="center img-responsive image_hover margem-texto" data-toggle="modal"
-                        data-target="#Batizado"
-                        src="img/mais_fotos/batizado-primeira eucaristia/WhatsApp Image 2019-11-24 at 18.32.09.jpeg"
-                        class="img-responsive" style="width:70%" alt="Image">
-                <p style="font-size: 18px;">Batizado/Primeira Eucaristia</p>
-            </div>
-
-            <div class="col-sm-4 botao_carousel">
-                <img src="img/mais_fotos/casamento/WhatsApp Image 2019-11-24 at 18.29.42.jpeg" data-toggle="modal"
-                    data-target="#Casamento" class="center img-responsive image_hover margem-texto" style="width:70%"
-                    alt="Image">
-                <p style="font-size: 18px;">Casamento</p>
-            </div>
-            <div class="col-sm-4 ">
-
-                <img data-toggle="modal" data-target="#Aniversario"
-                    src="img/mais_fotos/niver infatil/WhatsApp Image 2019-11-24 at 18.28.35 (1).jpeg"
-                    class="img-responsive center image_hover margem-texto" style="width:70%" alt="Image">
-                <p style="font-size: 18px;">Aniversário infantil</p>
-            </div>
-
-        </div>
-    </div>
-    <div class="modal fade" role="dialog" id="Casamento">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <div class="modal-body fino">
-                    <div id="CarouselCasamento" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#CarouselCasamento" data-slide-to="0" class="active"></li>
-                            <li data-target="#CarouselCasamento" data-slide-to="1"></li>
-                            <li data-target="#CarouselCasamento" data-slide-to="2"></li>
-                            <li data-target="#CarouselCasamento" data-slide-to="3"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="img/mais_fotos/casamento/WhatsApp Image 2019-11-24 at 18.29.43 (1).jpeg"
-                                    alt="Casamento 1" style="width:100%;">
-                            </div>
-
-                            <div class="item">
-                                <img src="img/mais_fotos/casamento/WhatsApp Image 2019-11-24 at 18.29.43 (2).jpeg"
-                                    alt="Casamento 2" style="width:100%;">
-                            </div>
-
-                            <div class="item">
-                                <img src="img/mais_fotos/casamento/WhatsApp Image 2019-11-24 at 18.29.43.jpeg"
-                                    alt="Casamento 3" style="width:100%;">
-                            </div>
-                            <div class="item">
-                                <img src="img/mais_fotos/casamento/WhatsApp Image 2019-11-24 at 18.29.44.jpeg"
-                                    alt="Casamento 4" style="width:100%;">
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#CarouselCasamento" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#CarouselCasamento" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" role="dialog" id="Batizado">
-
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body fino" id="conhecimento">
-                    <div id="CarouselBatizado" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#CarouselBatizado" data-slide-to="0" class="active"></li>
-                            <li data-target="#CarouselBatizado" data-slide-to="1"></li>
-                            <li data-target="#CarouselBatizado" data-slide-to="2"></li>
-                            <li data-target="#CarouselBatizado" data-slide-to="3"></li>
-                            <li data-target="#CarouselBatizado" data-slide-to="4"></li>
-                            <li data-target="#CarouselBatizado" data-slide-to="5"></li>
-
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <button style="position:fixed;" type="button" class="close"
-                                data-dismiss="modal">&times;</button>
-                            <div class="item active">
-
-                                <img src="img/mais_fotos/batizado-primeira eucaristia/WhatsApp Image 2019-11-24 at 18.32.15 (1).jpeg"
-                                    alt="Batizado 1" style="width:100%;">
-                            </div>
-
-                            <div class="item">
-                                <img src="img/mais_fotos/batizado-primeira eucaristia/WhatsApp Image 2019-11-24 at 18.32.15.jpeg"
-                                    alt="Batizado 2" style="width:100%;">
-                            </div>
-
-                            <div class="item">
-                                <img src="img/mais_fotos/batizado-primeira eucaristia/WhatsApp Image 2019-11-24 at 18.32.16 (1).jpeg"
-                                    alt="Batizado 3" style="width:100%;">
-                            </div>
-                            <div class="item">
-                                <img src="img/mais_fotos/batizado-primeira eucaristia/WhatsApp Image 2019-11-24 at 18.32.16 (2).jpeg"
-                                    alt="Batizado 4" style="width:100%;">
-                            </div>
-                            <div class="item">
-                                <img src="img/mais_fotos/batizado-primeira eucaristia/WhatsApp Image 2019-11-24 at 18.32.16 (3).jpeg"
-                                    alt="Batizado 5" style="width:100%;">
-                            </div>
-                            <div class="item">
-                                <img src="img/mais_fotos/batizado-primeira eucaristia/WhatsApp Image 2019-11-24 at 18.32.16.jpeg"
-                                    alt="Batizado 6" style="width:100%;">
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#CarouselBatizado" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#CarouselBatizado" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" role="dialog" id="Aniversario">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <div class="modal-body fino">
-                    <div id="CarouselAniversario" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#CarouselAniversario" data-slide-to="0" class="active"></li>
-                            <li data-target="#CarouselAniversario" data-slide-to="1"></li>
-                            <li data-target="#CarouselAniversario" data-slide-to="2"></li>
-                            <li data-target="#CarouselAniversario" data-slide-to="3"></li>
-                            <li data-target="#CarouselAniversario" data-slide-to="4"></li>
-                            <li data-target="#CarouselAniversario" data-slide-to="5"></li>
-                            <li data-target="#CarouselAniversario" data-slide-to="6"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="img/mais_fotos/niver infatil/WhatsApp Image 2019-11-24 at 18.28.35 (2).jpeg"
-                                    alt="Aniversario 1" style="width:100%;">
-                            </div>
-
-                            <div class="item">
-                                <img src="img/mais_fotos/niver infatil/WhatsApp Image 2019-11-24 at 18.28.35.jpeg"
-                                    alt="Aniversario 2" style="width:100%;">
-                            </div>
-
-                            <div class="item">
-                                <img src="img/mais_fotos/niver infatil/WhatsApp Image 2019-11-24 at 18.28.36 (1).jpeg"
-                                    alt="Aniversario 3" style="width:100%;">
-                            </div>
-                            <div class="item">
-                                <img src="img/mais_fotos/niver infatil/WhatsApp Image 2019-11-24 at 18.28.36.jpeg"
-                                    alt="Aniversario 4" style="width:100%;">
-                            </div>
-                            <div class="item">
-                                <img src="img/mais_fotos/niver infatil/WhatsApp Image 2019-11-24 at 18.28.37 (1).jpeg"
-                                    alt="Aniversario 5" style="width:100%;">
-                            </div>
-                            <div class="item">
-                                <img src="img/mais_fotos/niver infatil/WhatsApp Image 2019-11-24 at 18.28.37.jpeg"
-                                    alt="Aniversario 6" style="width:100%;">
-                            </div>
-                            <div class="item">
-                                <img src="img/mais_fotos/niver infatil/WhatsApp Image 2019-11-24 at 18.28.38.jpeg"
-                                    alt="Aniversario 7" style="width:100%;">
-                            </div>
-                        </div>
-
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#CarouselAniversario" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#CarouselAniversario" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row bg-white text-center" id="ultimos_trabalhos">
-            <h1 style="color:rgb(96, 61, 55);">Ultimos Trabalhos</h1><br>
-        <div class="col-md-12">
-            <div class="col-md-12" id="primeira_linha">
-                <div class="col-md-3">
+    <div class="border-radius" id="corpo">
+        <div class="container-fluid bg-3 text-center bg-rosa">
+            <h3 style="color:rgb(96, 61, 55);">Um pouco do meu trabalho</h3><br>
+            <div class="row">
+                <div class="col-sm-3">
                     <p>Lorem ipsum</p>
                     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%"
                         alt="Image">
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <p>Lorem ipsum</p>
                     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%"
                         alt="Image">
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <p>Lorem ipsum</p>
                     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%"
                         alt="Image">
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <p>Lorem ipsum</p>
                     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%"
                         alt="Image">
                 </div>
-
             </div>
-            <div class="col-md-12" id="segunda_linha">
+        </div>
+
+        <div class="container-fluid bg-3 text-center">
+            <div class="row bg-rosa">
                 <div class="col-md-3">
                     <p>Lorem ipsum</p>
                     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%"
@@ -325,24 +107,12 @@
             </div>
         </div>
     </div>
-    <div>
-        <footer class="container-fluid bg-rosa" id="rodape">
-            <div id="contatos" class="col-md-6">
-                <h4 style="color:rgb(96, 61, 55);">Contatos:</h4>
-                <p>Whatssapp: +55 (84) 99648-9990</p>
-                <p>Facebook: https://www.facebook.com/ateliedoceartern/</p>
-                <p>Gmail: ateliedoceartern@gmail.com</p>
-                <p><span class="glyphicon glyphicon-map-marker"></span> Natal, BR</p>
-            </div>
-            <div id="direitos" class="col-md-12 text-center ">
-                <hr>
-                <p>Ateliê Doce Arte © 2019. Todos os direitos reservados | Feito por <a
-                        href="https://github.com/yagobmarques">Yago Marques</a> e <a
-                        href="https://github.com/Fisiquelaz">Danilo Galvão</a>.</p>
-            </div>
+    <div class="border-radius">
+        <footer class="container-fluid text-center bg-rosa" id="rodape">
+            <p>Ateliê Doce Arte © 2019. Todos os direitos reservados. | Feito por <a href="https://github.com/yagobmarques">Yago Marques</a> e <a href="https://github.com/Fisiquelaz">Danilo Galvão</a>.</p>
         </footer>
     </div>
-
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
