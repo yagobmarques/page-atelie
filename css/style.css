@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 .center{
     display: block;
     margin-left: auto;
@@ -5,11 +9,11 @@
 }
 #titulo{
     background-color: #D9828B;
-    padding: 10px;
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 5px;
+    padding: 0px;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0px;
     border-collapse: collapse;
     background-image: url("../img/58930.jpg");
@@ -19,7 +23,9 @@
 #meuNavbar{
     background-color: #f4a0c5;
     margin: 0px;
-    border-radius: 5px;
+    border: none;
+    border-radius: 0;
+    
 }
 #meuNavbar a{
     color: #603d37;
@@ -39,15 +45,19 @@
      margin:0px;
 }
 .bg-white{
+    background-color:white;
+     padding-bottom: 10px;
+     margin:0px;
+}
+.bg-blue{
     background-color: #eaf8ff94;
      padding-bottom: 10px;
      margin:0px;
 }
-.border-radius{
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 5px;
+.bg-blue-2{
+    background-color:hsla(200, 74%, 82%, 0.58);
+     padding-bottom: 10px;
+     margin:0px;
 }
 #rodape{
     padding-top: 20px;
@@ -63,4 +73,52 @@
 }
 .margem-texto{
     margin-bottom: 10px;
+}
+#icones{
+    padding: 50px;
+}
+#icones img{
+    margin: 10px;
+}
+
+#sobre {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#sobre > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+#sobre > div > span {
+    text-align: center;
+    width: 50%;
+    margin: 20px 0 10px 0;
+
+}
+
+#foto_mayanne{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+#ultimos_trabalhos{
+    padding: 20px;
+}
+#ultimos_trabalhos > div img{
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    #sobre {
+      height: 100vh;
+  }
+  #sobre > div > span {
+      width: 90%;
+  }
 }
