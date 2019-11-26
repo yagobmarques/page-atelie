@@ -25,18 +25,22 @@
     color: #603d37;
 }
 #meuNavbar a:hover{
-    color: #0ABAB5;   
+    color: white;   
 }
 #rodape a{
     color: #603d37;
 }
 #rodape a:hover{
-    color: #0ABAB5;   
+    color: white;   
 }
 .bg-rosa{
      background-color: #f4a0c5;
-     
-     padding-bottom: 10px;;
+     padding-bottom: 10px;
+     margin:0px;
+}
+.bg-white{
+    background-color: #eaf8ff94;
+     padding-bottom: 10px;
      margin:0px;
 }
 .border-radius{
@@ -50,10 +54,13 @@
 }
 .image_hover:hover{
     opacity: 0.8;
-    border-width: 3px;
+    border-width: 1px;
     border-style: solid;
-    border-color: white;
+    border-color: black;
 }
 .fino{
     padding: 0px;
+}
+.margem-texto{
+    margin-bottom: 10px;
 }
