@@ -8,10 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script src="https://kit.fontawesome.com/e458e8faee.js" crossorigin="anonymous"></script>
 </head>
 
@@ -51,7 +52,7 @@
     </div>
     <div class="border-radius">
         <div class="container-fluid bg-3 text-center bg-rosa">
-            
+
         </div>
         <div class="container-fluid bg-3 text-center bg-rosa">
             <h1 style="color:rgb(96, 61, 55);">Categorias</h1><br>
@@ -80,11 +81,8 @@
         <div class="modal fade" role="dialog" id="Casamento">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h4>Casamento</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
+
+                    <div class="modal-body fino">
                         <div id="CarouselCasamento" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
@@ -131,13 +129,10 @@
             </div>
         </div>
         <div class="modal fade" role="dialog" id="Batizado">
+
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h4>Batizado</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
+                    <div class="modal-body fino" id="conhecimento">
                         <div id="CarouselBatizado" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
@@ -147,12 +142,15 @@
                                 <li data-target="#CarouselBatizado" data-slide-to="3"></li>
                                 <li data-target="#CarouselBatizado" data-slide-to="4"></li>
                                 <li data-target="#CarouselBatizado" data-slide-to="5"></li>
-                                
+
                             </ol>
 
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
+                                <button style="position:fixed;" type="button" class="close"
+                                    data-dismiss="modal">&times;</button>
                                 <div class="item active">
+
                                     <img src="img/mais_fotos/batizado-primeira eucaristia/WhatsApp Image 2019-11-24 at 18.32.15 (1).jpeg"
                                         alt="Batizado 1" style="width:100%;">
                                 </div>
@@ -197,11 +195,8 @@
         <div class="modal fade" role="dialog" id="Aniversario">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h4>Aniversario</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
+
+                    <div class="modal-body fino">
                         <div id="CarouselAniversario" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
@@ -243,8 +238,8 @@
                                         alt="Aniversario 6" style="width:100%;">
                                 </div>
                                 <div class="item">
-                                        <img src="img/mais_fotos/niver infatil/WhatsApp Image 2019-11-24 at 18.28.38.jpeg"
-                                            alt="Aniversario 7" style="width:100%;">
+                                    <img src="img/mais_fotos/niver infatil/WhatsApp Image 2019-11-24 at 18.28.38.jpeg"
+                                        alt="Aniversario 7" style="width:100%;">
                                 </div>
                             </div>
 
@@ -265,7 +260,9 @@
     </div>
     <div class="border-radius">
         <footer class="container-fluid text-center bg-rosa" id="rodape">
-            <p>Ateliê Doce Arte © 2019. Todos os direitos reservados. | Feito por <a href="https://github.com/yagobmarques">Yago Marques</a> e <a href="https://github.com/Fisiquelaz">Danilo Galvão</a>.</p>
+            <p>Ateliê Doce Arte © 2019. Todos os direitos reservados. | Feito por <a
+                    href="https://github.com/yagobmarques">Yago Marques</a> e <a
+                    href="https://github.com/Fisiquelaz">Danilo Galvão</a>.</p>
         </footer>
     </div>
 
