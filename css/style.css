@@ -100,9 +100,12 @@ html{
     text-align: center;
     width: 50%;
     margin: 20px 0 10px 0;
+    color:rgb(96, 61, 55);
 
 }
-
+#assinatura{
+  color:rgb(96, 61, 55);
+}
 #foto_mayanne{
     
     height: 300px;
@@ -116,7 +119,7 @@ html{
 }
 
 @media only screen and (max-width: 600px) {
-    #sobre {
+    #descricao{
       height: 100vh;
   }
   #sobre > div > span {
@@ -124,6 +127,9 @@ html{
   }
   .botao_carousel{
       margin-bottom: 50px;
+  }
+  #foto_mayanne{
+    height: 200px;
   }
 }
 img {
