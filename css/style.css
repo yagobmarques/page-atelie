@@ -101,13 +101,11 @@ html{
     width: 50%;
     margin: 20px 0 10px 0;
     color:rgb(96, 61, 55);
-
 }
 #assinatura{
   color:rgb(96, 61, 55);
 }
 #foto_mayanne{
-    
     height: 300px;
     border-radius: 50%;
 }
@@ -119,9 +117,7 @@ html{
 }
 
 @media only screen and (max-width: 600px) {
-    #descricao{
-      height: 100vh;
-  }
+    
   #sobre > div > span {
       width: 90%;
   }
