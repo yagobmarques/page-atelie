@@ -24,9 +24,10 @@ html{
 #meuNavbar{
     background-color: #f4a0c5;
     margin: 0px;
-    border: none;
     border-radius: 0;
+    border-width: 0 0 1px 0;
     position: sticky;
+    border-color: #603d37;
     
 }
 #meuNavbar a{
